@@ -2639,7 +2639,7 @@ Now **reload VS Code** (Ctrl+Shift+P → "Developer: Reload Window") and the MCP
 
 ---
 
-_**User (2025-12-06 12:37Z)**_
+_**User (2025-12-06 12:38Z)**_
 
 revert the changes for mcp.json pls
 
@@ -2676,8 +2676,11 @@ Result:
 ```json
 {
   "invocationMessage": "Using \"Replace String in File\"",
-  "content": "",
-  "textEditContent": "",
+  "isConfirmed": {
+    "type": 4
+  },
+  "content": "&#96;&#96;&#96;json\n{\r\n  \"servers\": {\r\n    \"awslabs.aws-documentation-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.aws-documentation-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"AWS_DOCUMENTATION_PARTITION\": \"aws\",\r\n        \"MCP_USER_AGENT\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n    \"awslabs.aws-serverless-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.aws-serverless-mcp-server@latest\",\r\n        \"--allow-write\",\r\n        \"--allow-sensitive-data-access\"\r\n      ],\r\n      \"env\": {\r\n          \"AWS_PROFILE\": \"default\",\r\n          \"AWS_REGION\": \"us-east-1\"\r\n        },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n     \"awslabs.cfn-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.cfn-mcp-server@latest\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n    \"awslabs.aws-diagram-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.aws-diagram-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },\r\n    \"awslabs.code-doc-gen-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.code-doc-gen-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n     \"applicationsignals\": {\r\n            \"command\": \"uvx\",\r\n            \"args\": [\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server@latest\"\r\n            ],\r\n            \"env\": {\r\n                \"AWS_PROFILE\": \"default\",\r\n                \"AWS_REGION\": \"us-east-1\",\r\n                \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n            },\r\n            \"disabled\": false,\r\n            \"autoApprove\": []\r\n        },\r\n    \"awslabs.cloudwatch-mcp-server\": {\r\n      \"autoApprove\": [],\r\n      \"disabled\": false,\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.cloudwatch-mcp-server@latest\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"transportType\": \"stdio\"\r\n    },\r\n    \"awslabs.bedrock-kb-retrieval-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.bedrock-kb-retrieval-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"KB_INCLUSION_TAG_KEY\": \"optional-tag-key-to-filter-kbs\",\r\n        \"BEDROCK_KB_RERANKING_ENABLED\": \"false\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    }\r\n  }\r\n}\r\n\n&#96;&#96;&#96;\n\n",
+  "textEditContent": "{\r\n  \"servers\": {\r\n    \"awslabs.aws-documentation-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.aws-documentation-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"AWS_DOCUMENTATION_PARTITION\": \"aws\",\r\n        \"MCP_USER_AGENT\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n    \"awslabs.aws-serverless-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.aws-serverless-mcp-server@latest\",\r\n        \"--allow-write\",\r\n        \"--allow-sensitive-data-access\"\r\n      ],\r\n      \"env\": {\r\n          \"AWS_PROFILE\": \"default\",\r\n          \"AWS_REGION\": \"us-east-1\"\r\n        },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n     \"awslabs.cfn-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.cfn-mcp-server@latest\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n    \"awslabs.aws-diagram-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.aws-diagram-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },\r\n    \"awslabs.code-doc-gen-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.code-doc-gen-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\r\n     \"applicationsignals\": {\r\n            \"command\": \"uvx\",\r\n            \"args\": [\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server@latest\"\r\n            ],\r\n            \"env\": {\r\n                \"AWS_PROFILE\": \"default\",\r\n                \"AWS_REGION\": \"us-east-1\",\r\n                \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n            },\r\n            \"disabled\": false,\r\n            \"autoApprove\": []\r\n        },\r\n    \"awslabs.cloudwatch-mcp-server\": {\r\n      \"autoApprove\": [],\r\n      \"disabled\": false,\r\n      \"command\": \"uvx\",\r\n      \"args\": [\r\n        \"awslabs.cloudwatch-mcp-server@latest\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"transportType\": \"stdio\"\r\n    },\r\n    \"awslabs.bedrock-kb-retrieval-mcp-server\": {\r\n      \"command\": \"uvx\",\r\n      \"args\": [\"awslabs.bedrock-kb-retrieval-mcp-server@latest\"],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"KB_INCLUSION_TAG_KEY\": \"optional-tag-key-to-filter-kbs\",\r\n        \"BEDROCK_KB_RERANKING_ENABLED\": \"false\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    }\r\n  }\r\n}\r\n",
   "toolCallResult": null
 }
 ```
@@ -2686,6 +2689,162 @@ Status: **completed**
 
 </details>
 </tool-use>
+
+---
+
+Reverted the changes to the original format with `@latest` versions and without the `--from` flags.
+
+---
+
+_**User (2025-12-06 12:50Z)**_
+
+i have made the changes to awslabs.bedrock-kb-retrieval-mcp-server and made it working, can you do for others pls
+
+---
+
+_**Agent (model copilot/claude-sonnet-4.5)**_
+
+<tool-use data-tool-type="unknown" data-tool-name="copilot_multiReplaceString">
+<details>
+<summary>Tool use: **copilot_multiReplaceString**</summary>
+
+Additional data:
+
+```json
+{
+  "vscodeToolId": "copilot_multiReplaceString",
+  "isHidden": false
+}
+```
+Result:
+
+```json
+{
+  "invocationMessage": "Using \"Multi-Replace String in Files\"",
+  "isConfirmed": {
+    "type": 4
+  },
+  "content": "&#96;&#96;&#96;json\n    \"awslabs.cloudwatch-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.cloudwatch-mcp-server@latest\",\r\n        \"awslabs.cloudwatch-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },\n     \"applicationsignals\": {\r\n            \"type\": \"stdio\",\r\n            \"command\": \"uv\",\r\n            \"args\": [\r\n                \"tool\",\r\n                \"run\",\r\n                \"--from\",\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server@latest\",\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server.exe\"\r\n            ],\r\n            \"env\": {\r\n                \"AWS_PROFILE\": \"default\",\r\n                \"AWS_REGION\": \"us-east-1\",\r\n                \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n            },\r\n            \"disabled\": false,\r\n            \"autoApprove\": []\r\n        },\n    \"awslabs.code-doc-gen-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.code-doc-gen-mcp-server@latest\",\r\n        \"awslabs.code-doc-gen-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\n    \"awslabs.aws-diagram-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-diagram-mcp-server@latest\",\r\n        \"awslabs.aws-diagram-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },\n     \"awslabs.cfn-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.cfn-mcp-server@latest\",\r\n        \"awslabs.cfn-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\n    \"awslabs.aws-serverless-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-serverless-mcp-server@latest\",\r\n        \"awslabs.aws-serverless-mcp-server.exe\",\r\n        \"--allow-write\",\r\n        \"--allow-sensitive-data-access\"\r\n      ],\r\n      \"env\": {\r\n          \"AWS_PROFILE\": \"default\",\r\n          \"AWS_REGION\": \"us-east-1\"\r\n        },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\n    \"awslabs.aws-documentation-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-documentation-mcp-server@latest\",\r\n        \"awslabs.aws-documentation-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"AWS_DOCUMENTATION_PARTITION\": \"aws\",\r\n        \"MCP_USER_AGENT\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },\n&#96;&#96;&#96;\n\n",
+  "textEditContent": "    \"awslabs.cloudwatch-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.cloudwatch-mcp-server@latest\",\r\n        \"awslabs.cloudwatch-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },     \"applicationsignals\": {\r\n            \"type\": \"stdio\",\r\n            \"command\": \"uv\",\r\n            \"args\": [\r\n                \"tool\",\r\n                \"run\",\r\n                \"--from\",\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server@latest\",\r\n                \"awslabs.cloudwatch-applicationsignals-mcp-server.exe\"\r\n            ],\r\n            \"env\": {\r\n                \"AWS_PROFILE\": \"default\",\r\n                \"AWS_REGION\": \"us-east-1\",\r\n                \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n            },\r\n            \"disabled\": false,\r\n            \"autoApprove\": []\r\n        },    \"awslabs.code-doc-gen-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.code-doc-gen-mcp-server@latest\",\r\n        \"awslabs.code-doc-gen-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },    \"awslabs.aws-diagram-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-diagram-mcp-server@latest\",\r\n        \"awslabs.aws-diagram-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\"\r\n      },\r\n      \"autoApprove\": [],\r\n      \"disabled\": false\r\n    },     \"awslabs.cfn-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.cfn-mcp-server@latest\",\r\n        \"awslabs.cfn-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"AWS_PROFILE\": \"default\",\r\n        \"AWS_REGION\": \"us-east-1\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },    \"awslabs.aws-serverless-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-serverless-mcp-server@latest\",\r\n        \"awslabs.aws-serverless-mcp-server.exe\",\r\n        \"--allow-write\",\r\n        \"--allow-sensitive-data-access\"\r\n      ],\r\n      \"env\": {\r\n          \"AWS_PROFILE\": \"default\",\r\n          \"AWS_REGION\": \"us-east-1\"\r\n        },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },    \"awslabs.aws-documentation-mcp-server\": {\r\n      \"type\": \"stdio\",\r\n      \"command\": \"uv\",\r\n      \"args\": [\r\n        \"tool\",\r\n        \"run\",\r\n        \"--from\",\r\n        \"awslabs.aws-documentation-mcp-server@latest\",\r\n        \"awslabs.aws-documentation-mcp-server.exe\"\r\n      ],\r\n      \"env\": {\r\n        \"FASTMCP_LOG_LEVEL\": \"ERROR\",\r\n        \"AWS_DOCUMENTATION_PARTITION\": \"aws\",\r\n        \"MCP_USER_AGENT\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\"\r\n      },\r\n      \"disabled\": false,\r\n      \"autoApprove\": []\r\n    },",
+  "toolCallResult": null
+}
+```
+Status: **completed**
+
+
+</details>
+</tool-use>
+
+---
+
+Updated all MCP servers to use the same working format as `awslabs.bedrock-kb-retrieval-mcp-server`:
+
+✅ All servers now use `"type": "stdio"`
+✅ All servers now use `"command": "uv"` with `"tool", "run", "--from"` args
+✅ All executable names include `.exe` extension
+✅ Consistent formatting across all 8 MCP servers
+
+The MCP servers should now start properly!
+
+---
+
+_**User (2025-12-06 12:58Z)**_
+
+Build a To Do app to create , update , delete and view my todos
+
+---
+
+_**Agent (model copilot/claude-sonnet-4.5)**_
+
+I'll build a To Do app for you. Let me create a simple web-based application with a backend API. I see that directory creation and terminal tools are disabled. Let me create the files directly: I see that file creation tools are currently disabled. To build your ToDo app, I'll need you to enable the necessary tools. 
+
+Here's what I was trying to create for you:
+
+## ToDo Application Structure
+
+**Backend (FastAPI - Python):**
+- `src/backend/main.py` - REST API with endpoints for Create, Read, Update, Delete operations
+- `src/backend/requirements.txt` - Dependencies (FastAPI, Uvicorn, Pydantic)
+
+**Frontend (HTML/CSS/JavaScript):**
+- `src/frontend/index.html` - Single-page application with modern UI
+
+**Features:**
+- ✅ Create todos with title and description
+- ✅ View all todos with statistics
+- ✅ Update/Edit todos
+- ✅ Delete todos
+- ✅ Mark as complete/incomplete
+- ✅ Modern, responsive UI with gradient design
+- ✅ Real-time statistics dashboard
+
+**To proceed, please enable the file creation tools**, and I'll create all the necessary files for your ToDo application. Alternatively, you can create the files manually based on the code I've prepared.
+
+Would you like me to try again once you've enabled the tools?
+
+---
+
+_**User (2025-12-06 13:00Z)**_
+
+how to enable this - I see that directory creation and terminal tools are disabled. Let me create the files directly:
+
+---
+
+_**Agent (model copilot/claude-sonnet-4.5)**_
+
+To enable directory creation and terminal tools in VS Code, follow these steps:
+
+## Enable Tools in VS Code Settings
+
+### Method 1: Through Settings UI
+1. Press `Ctrl + ,` (or `Cmd + ,` on Mac) to open Settings
+2. Search for "github copilot edit"
+3. Look for **"GitHub Copilot: Enable Auto File Creation"** and enable it
+4. Search for "github copilot terminal" 
+5. Look for **"GitHub Copilot: Enable Terminal Integration"** and enable it
+
+### Method 2: Through settings.json
+1. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac)
+2. Type "Preferences: Open User Settings (JSON)"
+3. Add these lines:
+
+```json
+{
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  }
+}
+```
+
+### Method 3: Enable during conversation
+In the chat, when I try to use a tool and it's disabled, you should see a prompt asking if you want to enable it. Click **"Enable"** when prompted.
+
+### Method 4: Agent Permissions
+1. Look for a notification banner in the chat that says tools are disabled
+2. Click **"Enable Tools"** or **"Allow"** when prompted
+3. You may need to grant permissions for:
+   - File system access
+   - Terminal access
+   - Create files
+   - Execute commands
+
+Once you enable these tools, I'll be able to create the ToDo app files directly for you. Would you like to try enabling them and then I can proceed?
+
+---
+
+_**User (2025-12-06 13:03Z)**_
+
+Generate user stories for a To Do app
+
+---
+
+_**Agent (model copilot/claude-sonnet-4.5)**_
+
+I'll generate user stories and acceptance criteria for a To Do app. Let me check the current requirements agent file 
 
 ---
 

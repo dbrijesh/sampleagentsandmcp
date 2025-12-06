@@ -1,8 +1,15 @@
 {
   "servers": {
     "awslabs.aws-documentation-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "--from",
+        "awslabs.aws-documentation-mcp-server@latest",
+        "awslabs.aws-documentation-mcp-server.exe"
+      ],
       "env": {
         "FASTMCP_LOG_LEVEL": "ERROR",
         "AWS_DOCUMENTATION_PARTITION": "aws",
@@ -12,9 +19,14 @@
       "autoApprove": []
     },
     "awslabs.aws-serverless-mcp-server": {
-      "command": "uvx",
+      "type": "stdio",
+      "command": "uv",
       "args": [
+        "tool",
+        "run",
+        "--from",
         "awslabs.aws-serverless-mcp-server@latest",
+        "awslabs.aws-serverless-mcp-server.exe",
         "--allow-write",
         "--allow-sensitive-data-access"
       ],
@@ -26,9 +38,14 @@
       "autoApprove": []
     },
      "awslabs.cfn-mcp-server": {
-      "command": "uvx",
+      "type": "stdio",
+      "command": "uv",
       "args": [
-        "awslabs.cfn-mcp-server@latest"
+        "tool",
+        "run",
+        "--from",
+        "awslabs.cfn-mcp-server@latest",
+        "awslabs.cfn-mcp-server.exe"
       ],
       "env": {
         "AWS_PROFILE": "default",
@@ -38,8 +55,15 @@
       "autoApprove": []
     },
     "awslabs.aws-diagram-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.aws-diagram-mcp-server@latest"],
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "--from",
+        "awslabs.aws-diagram-mcp-server@latest",
+        "awslabs.aws-diagram-mcp-server.exe"
+      ],
       "env": {
         "FASTMCP_LOG_LEVEL": "ERROR"
       },
@@ -47,8 +71,15 @@
       "disabled": false
     },
     "awslabs.code-doc-gen-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.code-doc-gen-mcp-server@latest"],
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "--from",
+        "awslabs.code-doc-gen-mcp-server@latest",
+        "awslabs.code-doc-gen-mcp-server.exe"
+      ],
       "env": {
         "FASTMCP_LOG_LEVEL": "ERROR"
       },
@@ -56,9 +87,14 @@
       "autoApprove": []
     },
      "applicationsignals": {
-            "command": "uvx",
+            "type": "stdio",
+            "command": "uv",
             "args": [
-                "awslabs.cloudwatch-applicationsignals-mcp-server@latest"
+                "tool",
+                "run",
+                "--from",
+                "awslabs.cloudwatch-applicationsignals-mcp-server@latest",
+                "awslabs.cloudwatch-applicationsignals-mcp-server.exe"
             ],
             "env": {
                 "AWS_PROFILE": "default",
@@ -69,21 +105,32 @@
             "autoApprove": []
         },
     "awslabs.cloudwatch-mcp-server": {
-      "autoApprove": [],
-      "disabled": false,
-      "command": "uvx",
+      "type": "stdio",
+      "command": "uv",
       "args": [
-        "awslabs.cloudwatch-mcp-server@latest"
+        "tool",
+        "run",
+        "--from",
+        "awslabs.cloudwatch-mcp-server@latest",
+        "awslabs.cloudwatch-mcp-server.exe"
       ],
       "env": {
         "AWS_PROFILE": "default",
         "FASTMCP_LOG_LEVEL": "ERROR"
       },
-      "transportType": "stdio"
+      "autoApprove": [],
+      "disabled": false
     },
     "awslabs.bedrock-kb-retrieval-mcp-server": {
-      "command": "uvx",
-      "args": ["awslabs.bedrock-kb-retrieval-mcp-server@latest"],
+        "type":"stdio",
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "--from",
+        "awslabs.bedrock-kb-retrieval-mcp-server@latest",
+        "awslabs.bedrock-kb-retrieval-mcp-server.exe"
+    ],
       "env": {
         "AWS_PROFILE": "default",
         "AWS_REGION": "us-east-1",

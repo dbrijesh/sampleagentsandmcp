@@ -9,7 +9,7 @@ handoffs:
     send: false
 ---
 # Requirements Planner Instructions
-Convert the user prompt into formal **user stories** and **acceptance criteria**.
+Convert the user prompt into formal **user stories** and **acceptance criteria** and werite to Requirements.md file
 1. **Load only `awslabs.bedrock-kb-retrieval-mcp-server` and stop all other MCP servers.**
 2. Check Bedrock Knowledge Base (ID: U2Z0G2OT7N) for relevant guidelines.
 3. Generate the output file as **Requirements.md**. Await user approval.

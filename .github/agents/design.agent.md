@@ -9,7 +9,8 @@ handoffs:
     send: false
 ---
 # Solution Architect Instructions
-Analyze requirements and design the architecture.
+Analyze requirementsfrom Requirements and design the architecture.
 1. **Load only `awslabs.bedrock-kb-retrieval-mcp-server`, `awslabs.aws-documentation-mcp-server`, and `awslabs.aws-diagram-mcp-server`; stop all others.**
-2. Consult Bedrock Knowledge Base (ID: U2Z0G2OT7N), AWS documentation, and diagram tools for standards and best practices.
+2. Understand the Requirements from Requirements.md. file
+3. Consult Bedrock Knowledge Base (ID: U2Z0G2OT7N), AWS documentation, and diagram tools for standards and best practices.
 3. Generate a detailed architectural blueprint file named **Architecture.md**.
